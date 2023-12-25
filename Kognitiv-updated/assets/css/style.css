@@ -16,6 +16,9 @@
     --color-danger: #f75842;
     --color-danger-variant: rgba(247, 88, 66, 0.4);
     --color-success-variant: rgba(66, 247, 244, 0.4);
+    --color-red-light: hsl(346, 87%, 46%, 15%);
+    --color-green-light: hsl(156, 100%, 38%, 15%);
+    --color-primary-variant: #5854c7;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.7);
     --color-black: #000;
@@ -151,10 +154,10 @@ nav button{
 
 header{
     position: relative;
-    top: 5rem;
+    top: 10rem;
     overflow: hidden;
     height: 70vh;
-    margin-bottom: 5rem;
+    margin-bottom: 14rem;
 }
 
 .header__container{
@@ -610,6 +613,7 @@ footer ul li a:hover{
     header{
         height: 60vh;
         margin-bottom: 4rem;
+        top: 5rem;
     }
 
     .header__container{
@@ -682,6 +686,8 @@ footer ul li a:hover{
     /* HEADER */
     header{
         height: 100vh;
+        top: 5rem;
+        margin-bottom: 5rem;
     }
 
     .header__container{
