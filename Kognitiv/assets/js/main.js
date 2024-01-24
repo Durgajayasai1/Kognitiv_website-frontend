@@ -61,3 +61,31 @@ valueDisplays.forEach((valueDisplay) => {
         }
     }, duration);
 })
+
+// GOBACK FUnction
+function goBack(){
+    window.history.back();
+}
+
+// SEARCH-BAR FOR BLOG
+const searchBlog = () =>{
+    const searchBox = document.getElementById("blogSearch").value.toUpperCase();
+    const storeblogs = document.getElementById("blog__search");
+    const blog = document.querySelectorAll(".blog");
+    const bname = storeblogs.getElementsByTagName("h4");
+
+    for(var i=0;i<bname.length;i++){
+        let match = blog[i].getElementsByTagName('h4')[0];
+
+        if(match){
+           let textvalue = match.textContent || match.innerHTML
+
+           if(textvalue.toUpperCase().indexOf(searchBox)>-1){
+                blog[i].style.display="";
+           }
+           else{
+                blog[i].style.display="none";
+           }
+        }
+    }
+}

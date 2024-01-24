@@ -1,3 +1,22 @@
+.back-arrow{
+    position: fixed;
+    top: 4rem;
+    left: 3rem;
+    cursor: pointer;
+    font-size: 34px;
+    color: var(--color-success);
+    padding: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.back-arrow i{
+    margin-top: 1px;
+}
+
 /* ===== ABOUT US ===== */
 .about__achievements{
     margin-top: 8.2rem;
@@ -269,5 +288,9 @@
 
     .teaminc__member p{
         margin-bottom: 1.5rem;
+    }
+
+    .back-arrow{
+        left: 1rem;
     }
 }

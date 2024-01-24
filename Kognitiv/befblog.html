@@ -44,12 +44,23 @@
     </nav>
     <!-- END OF NAV -->
 
+    <div class="back-arrow" onclick="goBack()">
+        <i class="uil uil-arrow-left"></i>
+    </div>
 
+<!-- SEARCH BAR FOR BLOGS -->
+    <form action="" class="container search__bar-container">
+        <div>
+            <i class="uil uil-search"></i>
+            <input type="search" id="blogSearch" placeholder="Search" onkeyup="searchBlog()">
+        </div>
+        <!-- <button type="submit" class="btn1" onclick="searchBlogs()" >Search</button> -->
+    </form>
 
 <!-- BLOGS -->
 <section class="blogs">
     <h2>Our Blogs</h2>
-    <div class="container blogs__container">
+    <div class="container blogs__container" id="blog__search">
     
     <!--Threats in Robotics-->
     <article class="blog">
@@ -779,12 +790,12 @@
 
             <ul class="footer__socials">
                 <li>
-                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/kognitiv.club" target="_blank"><i class="uil uil-facebook-f"></i></a>
                 </li>
-                <li><a href="#"><i class="uil uil-instagram"></i></a></li>
-                <li><a href="#"><i class="uil uil-twitter"></i></a></li>
-                <li><a href="#"><i class="uil uil-linkedin"></i></a></li>
-                <li><a href="#"><i class="uil uil-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/kognitiv_club/" target="_blank"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="https://twitter.com/kognitivclub" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/kognitiv-club/mycompany/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCYbMRONlhT1RCgswkbuGGzg" target="_blank"><i class="uil uil-youtube"></i></a></li>
             </ul>
         </div>
     </div>
