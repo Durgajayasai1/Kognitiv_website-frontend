@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/befblog.css">
@@ -746,7 +747,14 @@
             <a href="https://kowshikbasha.blogspot.com/2020/04/overfitting-and-underfitting.html" class="btn btn-primary" target="_blank">Read More</a>
         </div>
     </article> 
+    </div>
 
+    <!-- PAGINATION -->
+    <!-- Pagination -->
+    <div class="pagination-container">
+        <button id="prevPageBtn">Previous</button>
+        <div class="pagination-buttons"></div>
+        <button id="nextPageBtn">Next</button>
     </div>
 </section>
 <!-- END OF BLOGS -->
@@ -805,5 +813,94 @@
 </footer>
 <!-- END OF FOOTER -->
 <script src="./assets/js/main.js"></script>
+<!-- Pagination Script -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const blogsContainer = document.querySelector('.blogs__container');
+        const blogs = document.querySelectorAll('.blog');
+        const blogsPerPage = 9;
+        let currentPage = 1;
+
+        function showPage(page) {
+            const startIndex = (page - 1) * blogsPerPage;
+            const endIndex = startIndex + blogsPerPage;
+
+            blogs.forEach((blog, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    blog.style.display = 'block';
+                } else {
+                    blog.style.display = 'none';
+                }
+            });
+        }
+
+        function updatePaginationButtons() {
+            const totalPages = Math.ceil(blogs.length / blogsPerPage);
+
+            const paginationButtons = document.querySelector('.pagination-buttons');
+            if (paginationButtons) {
+                paginationButtons.innerHTML = '';
+
+                for (let i = 1; i <= totalPages; i++) {
+                    const button = document.createElement('button');
+                    button.textContent = i;
+                    button.addEventListener('click', function () {
+                        currentPage = i;
+                        showPage(currentPage);
+                        updatePaginationButtons();
+                    });
+                    if (i === currentPage) {
+                        button.classList.add('active');
+                    }
+                    paginationButtons.appendChild(button);
+                }
+            }
+        }
+
+        function setupPagination() {
+            const totalPages = Math.ceil(blogs.length / blogsPerPage);
+
+            const paginationContainer = document.querySelector('.pagination-buttons');
+
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.textContent = i;
+                button.addEventListener('click', function () {
+                    currentPage = i;
+                    showPage(currentPage);
+                    updatePaginationButtons();
+                });
+                if (i === currentPage) {
+                    button.classList.add('active');
+                }
+                paginationContainer.appendChild(button);
+            }
+
+            const prevPageBtn = document.getElementById('prevPageBtn');
+            const nextPageBtn = document.getElementById('nextPageBtn');
+
+            prevPageBtn.addEventListener('click', function () {
+                if (currentPage > 1) {
+                    currentPage--;
+                    showPage(currentPage);
+                    updatePaginationButtons();
+                }
+            });
+
+            nextPageBtn.addEventListener('click', function () {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    showPage(currentPage);
+                    updatePaginationButtons();
+                }
+            });
+        }
+
+        setupPagination();
+        showPage(currentPage);
+    });
+</script>
+
+
 </body>
 </html>
