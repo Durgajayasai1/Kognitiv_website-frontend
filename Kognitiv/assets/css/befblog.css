@@ -147,9 +147,13 @@
     margin: 0 5px;
     cursor: pointer;
     border-radius: 2rem;
-    border: 1px solid #3498db;
+    /* border: 1px solid #3498db; */
     background: transparent;
     color: var(--color-light);
+}
+
+#prevPageBtn, #nextPageBtn i{
+    font-size: 1.5rem;
 }
 
 #prevPageBtn:disabled, #nextPageBtn:disabled {

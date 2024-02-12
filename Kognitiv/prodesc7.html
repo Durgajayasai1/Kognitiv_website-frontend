@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/projectdesc.css">
     <style>
         body{ background-image: url(./assets/images/bg-texture.png); }
     </style>
@@ -43,67 +43,35 @@
     <!-- END OF NAV -->
 
 
-    <div class="back-arrow" onclick="goBack()">
-        <i class="uil uil-arrow-left"></i>
-    </div>
-
-    <section class="contact">
-        <div class="container contact__container">
-            <aisde class="contact__aside">
-                <div class="aside__image">
-                    <img src="./assets/images/contact__me.svg" alt="">
+    <section class="singleproject">
+        <div class="container singleproject__container">
+            <h2>Weed Detection In Rice Crop Using R-CNN  and OpenCv</h2>
+            <div class="project__author">
+                <div class="project__author-avatar">
+                    <img src="./assets/images/kognitiv-logo_whitepng.png">
                 </div>
-                <h2>Contact Us</h2>
-                <p style="color: var(--color-light);">
-                    <!-- Thank you for your interest in Kognitiv Club! 
-                    We value the opportunity to connect with individuals who 
-                    share our passion for technology and innovation. Whether 
-                    you have questions, ideas, or just want to say hello, we'd 
-                    love to hear from you. -->
-                    Connect with us at the Kognitiv Club! We cherish the chance 
-                    to engage with tech enthusiasts. Share your ideas, ask questions, 
-                    or simply drop a hello. Your input matters to us!
-                </p>
-                <ul class="contact__details">
-                    <!-- <li>
-                        <i class="uil uil-phone"></i>
-                        <h5>9963860465</h5>
-                    </li> -->
-                    <li>
-                        <i class="uil uil-envelope"></i>
-                        <h5>kognitiv.techclub@kluniversity.in</h5>
-                    </li>
-                    <li>
-                        <i class="uil uil-location-point"></i>
-                        <h5>KL University, Vaddeswaram</h5>
-                    </li>
-                </ul>
 
-                <ul class="contact__socials">
-                    <li><a href="https://www.facebook.com/kognitiv.club" target="_blank"><i class="uil uil-facebook-f"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/kognitiv-club/mycompany/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></li>
-                    <li><a href="https://www.instagram.com/kognitiv_club/" target="_blank"><i class="uil uil-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/kognitivclub" target="_blank"><i class="uil uil-twitter"></i></a></li>
-                    <li><a href="https://t.me/joinchat/1sxfSbNM1adhMzNl" target="_blank"><i class="uil uil-telegram"></i></a></li>
-                </ul>
-            </aisde>
-
-
-            <form action="" class="contact__form">
-                <div class="form__name">
-                    <input type="text" name="Student Id" placeholder="Registration ID">
-                    <input type="text" name="Student Name" placeholder="Your name" required>
+                <div class="project__author-info">
+                    <h5>By Technical Team</h5>
+                    <small>January 1, 2023</small>
                 </div>
-                <input type="email" name="Student Email" placeholder="Your Email Address" required>
-                <textarea name="Message" rows="7" placeholder="Ask your questions" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
+            <div class="singleproject__thumbnail">
+                <img src="./assets/images/Crop.png">
+            </div>
+            <p>
+                We all know about the increase in the population of the world so as usual the 
+                demand for rice also gets increased. For increasing the growth of rice in the 
+                crop we need to detect the weed and insects so that the growth of weed and insects 
+                could be decreased and there will be anincrease in the growth of rice. Deep Learning 
+                concept faster region-based convolutional neuralnetworks(Faster R-CNNs) is the proposed 
+                method that is used in the extraction of weed and insects into the rice crop field, 
+                that is accomplished using Python3 by using TensorFlow API. We can see the outcome in 
+                which the Faster R-CNN method is the state of arts method which is used for detection 
+                and classification of weed and insects which provide a good accuracy rate.
+            </p>
         </div>
     </section>
-    <!-- END OF CONTACT FORM -->
-
-
-
 
 
     <!-- FOOTER -->
@@ -113,7 +81,7 @@
                 <a href="index.html"><h4>KOGNITIV</h4></a>
                 <p style="color: var(--color-success);">"To make computers to see, hear, and learn. Let us welcome the future computing."</p>
                 <p>Machine Learning is pervasive, predicting, adapting through iterative training. 
-                Our club emphasizes projects, product development, and collaborative idea-sharing for stress-free learning.
+                   Our club emphasizes projects, product development, and collaborative idea-sharing for stress-free learning.
                 </p>
             </div>
 
@@ -160,6 +128,7 @@
         </div>
     </footer>
     <!-- END OF FOOTER -->
+
     <script src="./assets/js/main.js"></script>
 </body>
 </html>

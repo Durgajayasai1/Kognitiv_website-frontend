@@ -215,6 +215,7 @@ header{
 .category{
     background: var(--color-primary);
     padding: 2rem;
+    border: 1px solid transparent;
     border-radius: 2rem;
     transition: var(--transition);
 }
@@ -224,6 +225,7 @@ header{
 }
 
 .category:hover{
+    border-color: var(--color-blue-variant);
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
@@ -287,11 +289,13 @@ header{
     background: var(--color-bg3);
     /* background: transparent; */
     padding: 2rem;
+    border: 1px solid transparent;
     border-radius: 2rem;
     transition: var(--transition);
 }
 
 .ourwing:hover{
+    border-color: var(--color-blue-variant);
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
@@ -370,8 +374,8 @@ header{
 }
 
 .blog:hover{
+    border-color: var(--color-blue-variant);
     background: transparent;
-    border-color: var(--color-success);
 }
 
 .blog__Image img{

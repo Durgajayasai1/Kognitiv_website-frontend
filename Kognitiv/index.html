@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
     <style>
         body {
             background-image: url(./assets/images/bg-texture.png);
@@ -69,13 +70,120 @@
     </header>
     <!-- END OF HEADER -->
 
-    <section class="categories" id="section1">
+    <!--Image Slider-->
+    
+    <section class="slider" id="section1">
+    <div class="cd-slider-wrapper">
+		<ul class="cd-slider" data-step1="M1402,800h-2V525V0h1c0.6,0,1,0.4,1,1V800z" data-step2="M1400,800H739L427,523L760,0h639c0.6,0,1,0.4,1,1V800z" data-step3="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z" data-step4="M-2,800h2V525V0h-1c-0.6,0-1,0.4-1,1V800z" data-step5="M0,800h661l312-277L640,0L1,0C0.4,0,0,0.4,0,1L0,800z" data-step6="M0,800h1400V521V0L1,0C0.4,0,0,0.4,0,1L0,800z">
+			<li class="visible">
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-1">
+								<path id="cd-changing-path-1" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="./assets/images/slider/img-1.jpeg"></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+
+			<li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-2">
+								<path id="cd-changing-path-2" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='800px' width="1400px" clip-path="url(#cd-image-2)" xlink:href="./assets/images/slider/img-2.jpg"></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+
+			<li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-3">
+								<path id="cd-changing-path-3" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='800px' width="1400px" clip-path="url(#cd-image-3)" xlink:href="./assets/images/slider/img-3.jpg"></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+
+			<li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-4">
+								<path id="cd-changing-path-4" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='800px' width="1400px" clip-path="url(#cd-image-4)" xlink:href="./assets/images/slider/img-4.jpg"></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+            <li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-5">
+								<path id="cd-changing-path-5" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='800px' width="1400px" clip-path="url(#cd-image-5)" xlink:href="./assets/images/slider/img-5.jpeg"></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+            <li>
+				<div class="cd-svg-wrapper">
+					<svg viewBox="0 0 1400 800">
+						<defs>
+							<clipPath id="cd-image-6">
+								<path id="cd-changing-path-6" d="M1400,800H0V521V0h1399c0.6,0,1,0.4,1,1V800z"/>
+							</clipPath>
+						</defs>
+						
+						<image height='800px' width="1400px" clip-path="url(#cd-image-6)" xlink:href="./assets/images/slider/img-6.jpeg"></image>
+					</svg>
+				</div> <!-- .cd-svg-wrapper -->
+			</li>
+			
+		</ul> <!-- .cd-slider -->
+
+		<ul class="cd-slider-navigation">
+			<li><a href="#0" class="next-slide">Next</a></li>
+			<li><a href="#0" class="prev-slide">Prev</a></li>
+		</ul> <!-- .cd-slider-navigation -->
+
+		<ol class="cd-slider-controls">
+			<li class="selected"><a href="#0"><em>Item 1</em></a></li>
+			<li><a href="#0"><em>Item 2</em></a></li>
+			<li><a href="#0"><em>Item 3</em></a></li>
+			<li><a href="#0"><em>Item 4</em></a></li>
+            <li><a href="#0"><em>Item 5</em></a></li>
+            <li><a href="#0"><em>Item 6</em></a></li>
+		</ol> <!-- .cd-slider-controls -->
+	</div> <!-- .cd-slider-wrapper -->
+</section>
+
+    <!--End of Image Slider-->
+
+    <!-- <section class="categories">
         <div class="container categories__container">
-            <!-- <div class="categories__left">
+            <div class="categories__left">
                 <h1>Our Wings</h1>
                 <p style="color: var(--color-success);">To make computers to see, hear, and learn. Let us welcome the future computing.</p>
                    <a href="#" class="btn" style="border-radius: 50px;">Learn More</a>
-            </div> -->
+            </div>
             <div class="categories__right">
                 <article class="category">
                     <span class="category__icon"><i class="uil uil-robot"></i></span>
@@ -101,7 +209,7 @@
                 </article>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- END OF CATEGORIES -->
 
     <!-- ABOUT US -->
@@ -481,6 +589,7 @@
                     <li><a href="https://twitter.com/kognitivclub" target="_blank"><i class="uil uil-twitter"></i></a></li>
                     <li><a href="https://www.linkedin.com/company/kognitiv-club/mycompany/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
                     <li><a href="https://www.youtube.com/channel/UCYbMRONlhT1RCgswkbuGGzg" target="_blank"><i class="uil uil-youtube"></i></a></li>
+                    <li><a href="https://t.me/joinchat/1sxfSbNM1adhMzNl" target="_blank"><i class="uil uil-telegram"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -492,6 +601,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/jquery-2.1.4.js"></script>
+    <script src="./assets/js/jquery.mobile.custom.min.js"></script>
+    <script src="./assets/js/snap.svg-min.js"></script>
+    <script src="./assets/js/slider.js"></script> <!-- Resource jQuery -->
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
