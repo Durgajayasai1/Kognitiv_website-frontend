@@ -89,5 +89,3 @@ const searchBlog = () =>{
         }
     }
 }
-
-// PAGINATION
