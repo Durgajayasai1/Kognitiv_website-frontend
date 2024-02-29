@@ -184,7 +184,9 @@ header{
 }
 
 .telegram__container{
+    margin-top: 2rem;
     align-items: center;
+    justify-content: center;
 }
 
 .telegram__left{
@@ -752,6 +754,10 @@ footer ul li a:hover{
 
     .header__left p{
         margin-bottom: 1.3rem;
+    }
+
+    .telegram__left{
+        flex-direction: column;
     }
 
     /* CATEGORIES */
