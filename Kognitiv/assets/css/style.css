@@ -194,11 +194,11 @@ header{
 .telegram__left{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .telegram__left p{
@@ -726,14 +726,16 @@ footer ul li a:hover{
     .telegram__left p{
         font-size: 0.9rem;
     }
+    
+    .telegram__container{
+        grid-template-columns: 1fr;
+    }
 
     .telegram__left, .telegram__right{
         width: 100%;
-        text-align: center;
     }
-
-    .telegram__left{
-        margin-left: 2rem;
+    .telegram__right{
+        margin-top: 2rem;
     }
 }
 
@@ -827,13 +829,19 @@ footer ul li a:hover{
     }
 
     .telegram__container{
-        grid-template-columns: 1fr;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .telegram__left, .telegram__right{
+        width: 100%;
     }
 
     .telegram__left{
-        margin-left: 0;
-        margin-top: 4rem;
+        margin-left: 10rem;
+        margin-top: -5rem;
     }
 }
 
