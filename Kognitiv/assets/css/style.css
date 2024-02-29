@@ -184,6 +184,8 @@ header{
 }
 
 .telegram__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-top: 2rem;
     align-items: center;
     justify-content: center;
@@ -191,9 +193,12 @@ header{
 
 .telegram__left{
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     align-items: center;
+    text-align: center;
     justify-content: center;
+    margin-left: 10rem;
 }
 
 .telegram__left p{
@@ -726,6 +731,10 @@ footer ul li a:hover{
         width: 100%;
         text-align: center;
     }
+
+    .telegram__left{
+        margin-left: 2rem;
+    }
 }
 
 /* MEDIA QUERIES FOR MOBILE DEVICES */
@@ -820,6 +829,11 @@ footer ul li a:hover{
     .telegram__container{
         grid-template-columns: 1fr;
         text-align: center;
+    }
+
+    .telegram__left{
+        margin-left: 0;
+        margin-top: 4rem;
     }
 }
 
